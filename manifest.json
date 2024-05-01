@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Schools offer disabler",
+  "name": "Dont Show Me These Offers",
   "version": "1.0",
 
   "description": "Extension ayant pour objectifs de masquer les offres indésirables, lors de mes recherches d'alternance.",

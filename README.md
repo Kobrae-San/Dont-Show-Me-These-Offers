@@ -24,8 +24,8 @@ about:debugging#/runtime/this-firefox
 
 ## Auteur
 
-@Kobrae-San
+[@Kobrae-San](https://github.com/Kobrae-San)
 
 ## Remerciements
 
-Je tiens à remercier @heitzjulien pour l'idée de projet.
+Je tiens à remercier [@heitzjulien](https://github.com/heitzjulien) pour l'idée de projet.

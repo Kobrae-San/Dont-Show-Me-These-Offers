@@ -14,7 +14,7 @@ Dont Show Me These Offers est une extension firefox qui a pour but de faciliter 
 git clone https://github.com/Kobrae-San/Dont-Show-Me-These-Offers.git
 ```
 
-- Se rendre sur:
+- Se rendre à l'addresse suivante:
 
 ```
 about:debugging#/runtime/this-firefox

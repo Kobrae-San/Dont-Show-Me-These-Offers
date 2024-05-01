@@ -1,12 +1,6 @@
 // Script permettant de cacher les offres d'écoles
 
-const offerCompanyName = document.querySelectorAll(
-  '[data-testid="company-name"]'
-);
-
-const rightPanel = document.querySelector(".jobsearch-RightPane");
-
-const websiteHostList = ["fr.indeed.com"];
+const host = window.location.host;
 
 const disabledList = [
   "ISCOD",
@@ -15,16 +9,41 @@ const disabledList = [
   "42c",
   "MBS",
   "Wild Code School",
+  "GROUPE GEMA - ESI BUSINESS SCHOOL / IA SCHOOL (Siège National)",
+  "MyDigitalSchool Paris",
+  "Sup de Vinci Paris",
+  "L' École Multimédia",
+  "Digital School of Paris",
+  "3W Academy",
+  "Arinfo I-maginer",
+  "Aurlom",
+  "La Grande Classe",
+  "PST&B - Paris School of Technology & Business",
+  "2i Academy - Paris",
+  "Isika",
+  "Studi CFA",
 ];
 
-offerCompanyName.forEach((company) => {
-  if (disabledList.includes(company.innerText)) {
+if (host === "fr.indeed.com") {
+  const offerCompanyName = document.querySelectorAll(
+    '[data-testid="company-name"]'
+  );
+
+  const rightPanel = document.querySelector(".jobsearch-RightPane");
+
+  rightPanel.style.visibility = "collapse";
+
+  offerCompanyName.forEach((company) => {
     let parentNodeElement = company.parentNode;
     while (!parentNodeElement.classList.contains("css-5lfssm")) {
       parentNodeElement = parentNodeElement.parentNode;
     }
-    parentNodeElement.style.display = "none";
-  }
-});
-
-console.log(window.location.host);
+    if (disabledList.includes(company.innerText)) {
+      parentNodeElement.style.display = "none";
+    } else {
+      parentNodeElement.addEventListener("click", () => {
+        rightPanel.style.visibility = "visible";
+      });
+    }
+  });
+}

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 1,
+  "name": "Schools offer disabler",
+  "version": "1.0",
+
+  "description": "Extension ayant pour objectifs de masquer les offres indésirables, lors de mes recherches d'alternance.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.indeed.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+}

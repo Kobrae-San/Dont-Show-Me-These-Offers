@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Dont Show Me These Offers est une extension firefox qui a pour but de faciliter mes recherches d'alternances, l'objectif est simple cacher les offres des écoles. Pour ce faire un simple script fait en vanilla JS.
+Dont Show Me These Offers est une extension firefox qui a pour but de faciliter mes recherches d'alternances sur le site indeed, l'objectif est simple cacher les offres des écoles. Pour ce faire un simple script fait en vanilla JS.
 
 ## Fonctionnalité
 
@@ -24,8 +24,8 @@ about:debugging#/runtime/this-firefox
 
 ## Auteur
 
-@Kobrae-San
+[@Kobrae-San](https://github.com/Kobrae-San)
 
 ## Remerciements
 
-Je tiens à remercier @heitzjulien pour l'idée de projet.
+Je tiens à remercier [@heitzjulien](https://github.com/heitzjulien) pour l'idée de projet.

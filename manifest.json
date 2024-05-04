@@ -5,9 +5,17 @@
 
   "description": "Extension ayant pour objectifs de masquer les offres indésirables, lors de mes recherches d'alternance.",
 
+  "icons": {
+    "64": "shield_block_icon.svg"
+  },
+
   "content_scripts": [
     {
-      "matches": ["*://*.indeed.com/*"],
+      "matches": [
+        "*://*.indeed.com/*",
+        "*://*.hellowork.com/*",
+        "*://*.linkedin.com/*"
+      ],
       "js": ["script.js"]
     }
   ]
